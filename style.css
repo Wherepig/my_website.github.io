@@ -1,7 +1,9 @@
 .header-container {
-  background-color: #5c2424;
+  background-color: #388385;
   color: white;
   padding: 2rem 1rem;
+
+  /*#5c2424   #853838*/
 }
 
 .header-top {
@@ -15,20 +17,25 @@
 
 .logo img {
   margin: 2rem;
-  height: 150px;
+  height: 200px;
 
 }
 
 .site-label {
   text-align: right;
+  margin: 2rem;
 }
 
 .navbar {
+  /*
+  background-color: blue;*/
+  
   margin-top: 1rem;
   text-align: center;
 }
 
 .navbar ul {
+  
   list-style: none;
   display: inline-flex;
   gap: 2rem;
@@ -44,4 +51,58 @@
 
 .navbar a:hover {
   text-decoration: underline;
+}
+
+
+/*solid buttons*/
+.solid-button {
+  background-color: #2e6c6e;    /* solid background */
+  color: white;                 /* text color */
+  padding: 0.75rem 1.5rem;      /* space inside */
+  border: none;                 /* remove border */
+  border-radius: 5px;           /* rounded corners */
+  text-decoration: none;        /* remove underline if it's an <a> */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.solid-button:hover {
+  background-color: #1d4446;    /* slightly darker on hover */
+}
+
+a.solid-button:hover {
+
+    text-decoration: none;
+}
+
+
+.two-columns {
+  display: flex;
+  gap: 2rem; /* space between columns */
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.left-column {
+  flex: 1;
+  
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.right-column {
+  flex: 1;
+  
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/*for my profile picture*/
+.profile-picture {
+  /*
+  margin: 2rem;*/
+  height: 500px;
 }
