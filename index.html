@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link rel="stylesheet" href="style.css">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
-    header { background: #333; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header { background: #25a545; color: #fff; padding: 2rem 1rem; text-align: center; }
     header h1 { font-size: 2.5rem; }
     header p { font-size: 1.2rem; }
 
@@ -23,7 +26,7 @@
     }
 
     footer {
-      background: #222;
+      background:#5c2424;
       color: #fff;
       text-align: center;
       padding: 1rem;
@@ -36,14 +39,36 @@
 </head>
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | Creator</p>
-  </header>
+<header class="header-container">
+
+  <!-- Top row: logo left, title right -->
+  <div class="header-top">
+    <div class="logo">
+      <img src="f_crest.png" alt="Logo" />
+    </div>
+    <div class="site-label">
+      <h1>Thor Pilegaard</h1>
+      <p>Web Developer | Creator</p>
+    </div>
+  </div>
+
+  <!-- Navbar below -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a passionate web developer who enjoys building responsive websites and web apps. I love learning new technologies and solving problems through code.</p>
+    <p>Hello! I'm a passionate web developer who enjoys building responsive websites and web apps.
+       I love learning new technologies and solving problems through code. </p>
   </section>
 
   <section id="projects" class="projects">
