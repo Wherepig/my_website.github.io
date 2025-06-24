@@ -1,3 +1,8 @@
+/*font sizes for the header*/
+header h1 { font-size: 2.5rem; }
+header p { font-size: 1.2rem; }
+
+
 .header-container {
   background-color: #388385;
   color: white;
@@ -54,6 +59,22 @@
 }
 
 
+/* Hamburger is hidden by default */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 /*solid buttons*/
 .solid-button {
   background-color: #2e6c6e;    /* solid background */
@@ -102,7 +123,73 @@ a.solid-button:hover {
 
 /*for my profile picture*/
 .profile-picture {
-  /*
-  margin: 2rem;*/
-  height: 500px;
+  /**/
+  margin: 2rem;
+  height: 50vh;
 }
+
+
+
+
+
+/*for different window sizes*/
+@media (max-width: 768px) {
+
+
+
+
+    .logo img {
+      margin: 0.5rem;
+      height: 100px;
+
+    }
+
+    /*font sizes for the header*/
+    header h1 { font-size: 1.6rem; }
+    header p { font-size: 0rem; }
+
+
+    /*bring in the left and right columns and stack them*/
+    .two-columns {
+      flex-direction: column;
+    }
+
+    /*for my profile picture*/
+    .profile-picture {
+      /**/
+      margin: 1rem;
+      height: 45vh;
+    }
+
+
+
+
+
+    /*hamburger menu pop up for mobile*/
+      .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #388385;
+        padding: 1rem 0;
+      }
+
+      .navbar.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
+
+
+
+}
+
