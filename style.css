@@ -129,6 +129,25 @@ a.solid-button:hover {
 }
 
 
+/*resume picture*/
+.resume-pic {
+  display: block;         /* Needed for margin auto to work */
+  margin: 0 auto;         /* Horizontally center the image */
+  max-width: 100%;        /* Responsive scaling */
+                          /* Maintain aspect ratio */
+  
+  height: 100vh;
+}
+
+.single-column {
+  max-width: 800px;   /* limits width for readability */
+  margin: 0 auto;     /* centers the column */
+  
+}
+
+.buffer-row {
+  height: 5rem; /* or use padding */
+}
 
 
 
@@ -188,7 +207,11 @@ a.solid-button:hover {
         gap: 2rem;
       }
 
-
+    /*resume picture*/
+    .resume-pic {
+      margin: 0rem;
+      height: 500px;
+    }  
 
 
 }
