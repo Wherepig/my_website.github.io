@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Input Runner</title>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+</head>
+<body>
+  <h2>Python Input Demo</h2>
+  <textarea id="pythonCode" rows="10" cols="80">
+name = input("first number ")
+age = input("second number ")
+new_num = age + name
+print(f"{name} and {age} is {new_num}")
+  </textarea><br>
+  <button onclick="runPython()">Run</button>
+  <pre id="output"></pre>
+
+  <script>
+    let pyodide;
+
+    async function initPyodide() {
+      pyodide = await loadPyodide();
+
+      // Inject a custom input function using JavaScript's prompt()
+      pyodide.registerJsModule('jsinput', {
+        input: (text) => {
+          return prompt(text || "Input:");
+        }
+      });
+
+      // Override Python's built-in input
+      pyodide.runPython(`
+import builtins
+import jsinput
+builtins.input = jsinput.input
+      `);
+    }
+
+    initPyodide();
+
+    async function runPython() {
+      const code = document.getElementById("pythonCode").value;
+      let output = '';
+      pyodide.setStdout({ batched: (text) => output += text });
+      pyodide.setStderr({ batched: (text) => output += text });
+
+      try {
+        await pyodide.runPythonAsync(code);
+        document.getElementById("output").innerText = output || "Code ran successfully.";
+      } catch (err) {
+        document.getElementById("output").innerText = "Error:\n" + err;
+      }
+    }
+  </script>
+</body>
+</html>

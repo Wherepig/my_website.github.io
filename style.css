@@ -161,15 +161,37 @@ a.solid-button:hover {
   height: 100vh;
 }
 
+/*for art picture*/
+.art-pic {
+  /*display: block;          Needed for margin auto to work */
+  margin: 0 auto;         /* Horizontally center the image */
+  max-width: 100%;        /* Responsive scaling */
+                          /* Maintain aspect ratio */
+  
+  
+}
+
+
+
 .single-column {
   max-width: 800px;   /* limits width for readability */
   margin: 0 auto;     /* centers the column */
+    height: auto;
+  display: block;
   
 }
 
 .buffer-row {
   height: 5rem; /* or use padding */
 }
+
+
+/*Indentation for extra space*/
+.indent {
+  padding-left: 4rem; /* or use margin-left */
+  display: inline-block;
+}
+
 
 
 
@@ -236,6 +258,14 @@ a.solid-button:hover {
       margin: 0rem;
       height: 500px;
     }  
+
+
+
+    /*Indentation for extra space*/
+    .indent {
+      padding-left: 1rem; /* or use margin-left */
+      display: inline-block;
+    }
 
 
 }
