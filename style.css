@@ -225,11 +225,26 @@ a.solid-button:hover {
     }
 
 
+    .header-container {
+  
+      background-color: #388385;
+      color: white;
+      padding: 2rem 1rem;
+      margin-bottom: 0rem;
+
+      position: sticky;
+      top: -150px;
+    }
+
+
+
+
 
 
 
     /*hamburger menu pop up for mobile*/
       .navbar {
+
         display: none;
         flex-direction: column;
         width: 100%;
@@ -238,18 +253,23 @@ a.solid-button:hover {
         
       }
 
+      /**/
       .navbar.open {
         display: flex;
       }
 
       .hamburger {
         display: block;
+        margin-bottom: -1.75rem;
+        
+        
         
       }
 
       .navbar ul {
         flex-direction: column;
         align-items: center;
+        margin-top: 1.25rem;
         gap: 2rem;
       }
 
