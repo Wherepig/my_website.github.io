@@ -195,7 +195,7 @@ a.solid-button:hover {
 
 
 
-/*for different window sizes*/
+/*for iPhone 12 and 13 sizes*/
 @media (max-width: 390px) {
 
 
@@ -289,4 +289,36 @@ a.solid-button:hover {
 
 
 }
+
+
+/*for mobile S sizes*/
+  @media (max-width: 320px) {
+
+    .header-container {
+      
+
+      padding: 2rem 1rem;
+      margin-bottom: 0rem;
+      margin-right: -0.5rem;
+
+
+    }
+
+    .site-label {
+      text-align: right;
+      margin: 1rem;
+    }
+
+
+    header h1 { font-size: 1.25rem; }
+   
+    .header-top {
+    
+      justify-content: center;
+      margin: auto;
+    }
+
+
+
+  }
 
