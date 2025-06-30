@@ -298,11 +298,17 @@ a.solid-button:hover {
       
 
       padding: 2rem 1rem;
-      margin-bottom: 0rem;
+     
       margin-right: -0.5rem;
+      position: sticky;
+      top: -135px;
+
 
 
     }
+
+
+
 
     .site-label {
       text-align: right;
@@ -316,9 +322,32 @@ a.solid-button:hover {
     
       justify-content: center;
       margin: auto;
+  
+
+    }
+
+    .profile-picture {
+      /**/
+      margin: 1rem;
+      height: 30vh;
     }
 
 
+    
+    .logo img {
+      
+      height: 95px;
+
+    }
+
+
+    .hamburger {
+        display: block;
+        margin-bottom: -2rem;
+        
+        
+        
+    }
 
   }
 
