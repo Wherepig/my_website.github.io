@@ -172,6 +172,21 @@ a.solid-button:hover {
 }
 
 
+.game-pic { 
+  margin: 0 auto;         /* Horizontally center the image */
+  max-width: 100%;        /* Responsive scaling */
+  border-radius: 15px;  /* adjust value for more/less rounding *//
+
+}
+
+  a img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  a img:hover {
+    transform: scale(1.05);
+  }
+
 
 .single-column {
   max-width: 800px;   /* limits width for readability */
