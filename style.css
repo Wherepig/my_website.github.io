@@ -203,8 +203,9 @@ a.solid-button:hover {
 
 /*Indentation for extra space*/
 .indent {
-  padding-left: 4rem; /* or use margin-left */
-  display: inline-block;
+  /*padding-left: 4rem;  or use margin-left 
+  display: inline-block;*/
+  text-align: center;
 }
 
 
@@ -325,16 +326,20 @@ a.solid-button:hover {
     
     .single-column {
       align-items: center;
+        flex: 1;
+  
+        padding: 1rem;
+        border-radius: 8px;
       
     }
 
 
 
-    /*Indentation for extra space*/
+    /*Indentation for extra space
     .indent {
-      padding-left: 1rem; /* or use margin-left */
+      padding-left: 1rem; 
       display: inline-block;
-    }
+    }*/
 
 
 }
