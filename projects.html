@@ -65,8 +65,8 @@
     <ul>
       <li><a class="solid-button" href="index.html">About</a></li>
       <li><a class="solid-button" href="resume.html">Resume</a></li>
-      <!--
-      <li><a class="solid-button" href="projects.html">Coding Projects</a></li>-->
+      <!---->
+      <li><a class="solid-button" href="projects.html">Coding Projects</a></li>
       <li><a class="solid-button" href="games.html">Games</a></li>
       <li><a class="solid-button" href="art.html">Art</a></li>
       
@@ -79,6 +79,8 @@
 
         <div class="single-column">
 
+          <!--One Time Pad-->
+          <div class="card">
           <h1 class="indent">One Time Pad</h1>
                 <h4>Purpose: </h4>
                 <p>Easy way to obscure short plaintext messages with a low algorithmic/time complexity</p>
@@ -96,9 +98,13 @@
                   <li>Python : For the base language</li>
                   <li>Regex : Pattern matching and decoding and encoding cipher text</li>
                   <li>ASCII Characters : basis for ciphertext</li>
-              
+          </div>  
+
+
           <div class="buffer-row"></div>
 
+          <!--Lunar lander-->
+          <div class="card">
           <h1 class="indent">Lunar Lander (Team project)</h1>
                 <h4>Purpose: </h4>
                 <p>Create a client-server simulation of a functioning moon lander</p>
@@ -117,19 +123,24 @@
                 
                   <li>Python : For the GUI</li>
                   <li>MySQL : Server</li>
-                
-        
+          </div>
+
+
           <div class="buffer-row"></div>
 
+          <!--Storm alert-->
+          <div class="card">
           <h1 class="indent">Storm alert</h1>     
 
                 <h4>Purpose: </h4>
-                <p>Predict storm/no-storm outcome using SGD Regression (Ai/ML) </p>
+                <p>Predict storm/no-storm (binary) outcome using SGD Regression (Ai/ML) </p>
                 <div class="buffer-row"></div>
                 <h4>How this was achieved:</h4> 
-                <p>Create a new randomized cipher of ASCII characters for every message.
-                  Message could not be longer than the total number of ASCII characters used for cipher. Once the message
-                  was created the cipher would randomize the ASCII characters again for the next message.
+                <p>A dataset of Sythetic storm alerts (yes/no) was loaded and parsed for the model. The data was split into two sets; True Labels
+                  and Predicted labels. An SGD Regressor model was applied to the training data ( predicted data ). After the model ran the data,
+                  a threshold was applied to the predicted output ( this took car of the binary nature of the storm alerts). Then, a Confusion matrix 
+                  was applied to both the True Labels and Predicted Labels ( this would help see how far off or how accurate the model was in predicting
+                  the true data.)
                 </p>
 
                 <div class="buffer-row"></div>
@@ -141,9 +152,14 @@
 
                 
                 <h4><a href="https://colab.research.google.com/drive/1vXPN87CjRI17G5O85_zt6zyt7bK4p5Ql?usp=sharing">See the code here</a></h4>
-        
+          </div>
+
+          
           <div class="buffer-row"></div>
 
+
+          <!--Cookbook-->
+          <div class="card">
           <h1 class="indent">CookBook Website  (Team project)</h1>
 
                 <h4>Purpose: </h4>
@@ -169,7 +185,9 @@
                   <li>JavaScript</li>
                   <li>Ai generated photos for recipes</li>
                   <li>ChatGPT for suggestions and code refinement</li>
-          
+
+                <h4><a href="https://github.com/c-cardie/cookbookPlanet">See the code here</a></h4>
+          </div>
           <div class="buffer-row"></div>
 
         
